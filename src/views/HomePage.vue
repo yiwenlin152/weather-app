@@ -51,11 +51,11 @@ import WeatherCard from "../components/WeatherCard.vue";
 import CityList from "../components/CityList.vue";
 const router = useRouter();
 const store = useMainStore();
-const city = ref("");
-const resCity = ref([]);
+let city = ref("");
+let resCity = ref([]);
 let timer = ref(null);
-const resErr = ref(false);
-const netErr = ref(false);
+let resErr = ref(false);
+let netErr = ref(false);
 // 搜索城市
 function searchCity() {
   // 先清空

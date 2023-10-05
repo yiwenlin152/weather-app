@@ -7,7 +7,7 @@ const useMainStore = defineStore("main", () => {
   // 获取搜索城市的天气预测信息
   let resCast = ref([]);
   // 定义当前城市是否在收藏列表中
-  const isSaved = ref(false);
+  let isSaved = ref(false);
 
   // 获取当前ip地区天气预报
   const setCurCast = (cast) => {

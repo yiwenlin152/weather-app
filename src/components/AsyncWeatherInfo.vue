@@ -27,7 +27,7 @@ import { useRoute } from "vue-router";
 import { getLives, getCast } from "../api";
 const store = useMainStore();
 const route = useRoute();
-const resLives = ref("");
+let resLives = ref("");
 // 获取实时天气
 const res1 = await getLives(route.params.adcode);
 resLives.value = res1.lives[0];
